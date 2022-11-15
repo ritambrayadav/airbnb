@@ -1,0 +1,29 @@
+header{
+    height: 100px;
+    background-color: antiquewhite;
+    padding: 10px;
+}
+.left_header{
+    float: left;
+}
+.left_header img{
+    height: 100px;
+}
+.right_header{
+    float: right;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+.right_header > a{
+        margin-left: 10px;
+}
+.right_header > .profile{
+    border: 1px solid black;
+    border-radius: 25%;
+    padding: 5px 10px;
+}
+.right_header > .profile > span{
+    margin-left: 5px;
+}
