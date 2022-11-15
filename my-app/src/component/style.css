@@ -46,18 +46,15 @@ header{
 
 /* ////////////// First section ////////// */
 #root {
-    /* max-width: 1500px; */
-    margin: 0 auto;
     margin-left: 100px;
-    /* padding: 2rem; */
   }
   .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-    max-width: 700px;
+    max-width: 500px;
     height: 16em;
     margin: 20px 10px;
     position: relative;
     border-radius: 5px;
+    padding: 20px;
   }
   .card > .product_image {
     width: 100%;
@@ -117,11 +114,38 @@ header{
 
   /* //////////// Category section /////// */
   .categories{
-    margin: 50px;
+    margin: 10px;
   }
   .categories a{
     background-color: #D3D3D3;
     padding: 5px 10px;
     border: 1px solid grey;
     border-radius: 10px;
+    display: block;
+    overflow:hidden;
   }
+
+
+
+  /* //////////// */
+  /* .react-multi-carousel-list{
+    position: unset !important;
+  } */
+  .react-multiple-carousel__arrow--right{
+    right: calc(2% + 1px) !important;
+    top: calc(-5% + 1px) !important;
+}
+.react-multiple-carousel__arrow--left{
+  left: calc(-12% + 1px) !important;
+  top: calc(5% + 1px) !important;
+}
+.react-multiple-carousel__arrow {
+  border: 1px solid grey !important;
+  background: white !important;
+  min-width: 30px !important;
+  min-height: 30px !important;
+}
+.react-multiple-carousel__arrow::before {
+  font-size: 10px !important;
+  color: grey !important;
+}

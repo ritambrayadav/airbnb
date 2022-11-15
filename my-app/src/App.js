@@ -35,19 +35,15 @@ function App() {
       
       <div>
         <h2 style={{color:"black",textAlign:"left"}}>New this week</h2>
-      <Carousel responsive={responsive_1}>
+      
+      <Carousel responsive={responsive_1} >
         {product_1}
       </Carousel>
+      
       </div>
 
       <div>
-        <div style={{display:"flex"}}>
-      <div>Dates</div>
-      <div>Group size</div>
-      <div>More filters</div>
-      <div style={{width:"1px",height:"20px",background:"grey"}}></div>
-      </div>
-      <Carousel responsive={responsive}>
+      <Carousel partialVisible={true} responsive={responsive}>
         {product}
       </Carousel>
       </div>
