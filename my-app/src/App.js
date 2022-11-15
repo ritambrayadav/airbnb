@@ -1,18 +1,25 @@
 
 import './App.css';
+import './component/style.css'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import { responsive,  } from './component/data';
+import { responsive, productData } from './component/data';
 import Header from './component/Header';
+import Firstsec from './component/Firstsec';
 
 function App() {
-  
+  const product = productData.map((item)=>(
+    <Firstsec
+    heading={item.heading}
+    url={item.imageurl}
+    price={item.price}
+    description={item.description} />
+  ))
   return (
     <div className="App">
-      <h2>React multi carousel</h2>
       <Carousel responsive={responsive}>
-        
-      </Carousel>;
+        {product}
+      </Carousel>
     </div>
   );
 }

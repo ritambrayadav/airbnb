@@ -1,10 +1,15 @@
 import React from 'react'
 
-function Firstsec() {
+function Firstsec(props) {
     return (
-        <div>
-
-        </div>
+        <div className="card">
+      <img className="product_image" src={props.url} alt="product image" />
+      <p>
+      <h4>Collection</h4>
+      <h2>{props.heading}</h2>
+      </p>
+        <button>Show all</button>
+    </div>
     )
 }
 
