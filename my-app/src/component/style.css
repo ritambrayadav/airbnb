@@ -1,3 +1,4 @@
+/* /////////// Header ////////// */
 header{
     height: 50px;
     padding: 10px;
@@ -39,22 +40,23 @@ header{
   box-shadow: 0 4px 8px 0 #D3D3D3
 }
 .right_header > .profile > span{
-    margin-left: 5px;
+    margin-left: 10px;
 }
 
 
 
 /* ////////////// First section ////////// */
 #root {
-    margin-left: 100px;
+    margin-left: 5%;
+    overflow: hidden;
   }
   .card{
     max-width: 500px;
     height: 16em;
-    margin: 20px 10px;
+    margin: 20px 0px;
     position: relative;
     border-radius: 5px;
-    padding: 20px;
+    padding: 10px;
   }
   .card > .product_image {
     width: 100%;
@@ -66,7 +68,7 @@ header{
   .card button {
     border: none;
     outline: 0;
-    padding: 12px;
+    padding: 10px;
     color: black;
     background-color: white;
     text-align: center;
@@ -75,6 +77,7 @@ header{
     position: absolute;
     bottom: 10px;
     left: 10px;
+    margin: 10px;
     border-radius: 5px;
   }
   .card > p{
@@ -89,18 +92,18 @@ header{
     padding-top: 10px;
   }
   .card button:hover {
-    opacity: 0.7;
+    opacity: 0.8;
   }
 
 
   /* /////////////Second section //////////// */
 
   .cards{
-    max-width: 500px;
-    margin: auto 10px;
+    max-width: 400px;
+    margin: 20px 10px;
     text-align: center;
     font-family: arial;
-    position: relative;
+    /* position: relative; */
     border-radius: 5px;
   }
   .cards > .product_image {
@@ -114,38 +117,67 @@ header{
 
   /* //////////// Category section /////// */
   .categories{
-    margin: 10px;
+    margin: 20px 10px;
   }
   .categories a{
     background-color: #D3D3D3;
-    padding: 5px 10px;
+    padding: 5px 0px;
     border: 1px solid grey;
     border-radius: 10px;
     display: block;
-    overflow:hidden;
   }
 
 
 
-  /* //////////// */
-  /* .react-multi-carousel-list{
-    position: unset !important;
-  } */
+  /* //////////// arrow positions ////////// */
+  .react-multi-carousel-list{
+    overflow: visible !important;
+  }
   .react-multiple-carousel__arrow--right{
-    right: calc(2% + 1px) !important;
-    top: calc(-5% + 1px) !important;
+    right: calc(0px + 1px) !important;
+    top: calc(-20px + 1px) !important;
 }
 .react-multiple-carousel__arrow--left{
-  left: calc(-12% + 1px) !important;
-  top: calc(5% + 1px) !important;
+  left: calc(94% + 1px) !important;
+  top: calc(-20px + 1px) !important;
 }
+
 .react-multiple-carousel__arrow {
   border: 1px solid grey !important;
   background: white !important;
-  min-width: 30px !important;
-  min-height: 30px !important;
+  min-width: 25px !important;
+  min-height: 25px !important;
 }
 .react-multiple-carousel__arrow::before {
   font-size: 10px !important;
   color: grey !important;
 }
+
+@media screen and (max-width:900px) {
+.react-multiple-carousel__arrow--left{
+  left: calc(92% + 1px) !important;
+}
+#root {
+  margin-left: 0px;
+}
+}
+@media screen and (max-width:650px) {
+  .react-multiple-carousel__arrow--left{
+    left: calc(90% + 1px) !important;
+  }
+  }
+  @media screen and (max-width:500px) {
+    .react-multiple-carousel__arrow--left{
+      left: calc(88% + 1px) !important;
+    }
+    }
+    @media screen and (max-width:400px) {
+      .react-multiple-carousel__arrow--left{
+        left: calc(85% + 1px) !important;
+      }
+      }
+    @media screen and (max-width:300px) {
+      .react-multiple-carousel__arrow--left{
+        left: calc(80% + 1px) !important;
+      }
+      }
